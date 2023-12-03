@@ -1,4 +1,4 @@
-import { ArrowLeft } from "lucide-react";
+import { Plane } from "lucide-react";
 import Link from "next/link";
 import React, { useEffect, useRef, useState } from "react";
 
@@ -27,16 +27,25 @@ export const Navigation = () => {
       >
         <div className="container flex flex-row-reverse items-center justify-between p-6 mx-auto">
           <div className="flex justify-between gap-8">
-            <Link href="/projects" className="duration-200 text-zinc-400 hover:text-white">
+            <Link
+              href="/projects"
+              className="duration-200 text-zinc-400 hover:text-white"
+            >
               Projects
             </Link>
-            <Link href="/contact" className="duration-200 text-zinc-400 hover:text-white">
+            <Link
+              href="/contact"
+              className="duration-200 text-zinc-400 hover:text-white"
+            >
               Contact
             </Link>
           </div>
 
-          <Link href="/" className="duration-200 text-zinc-300 hover:text-white">
-            <ArrowLeft className="w-6 h-6 " />
+          <Link
+            href="/"
+            className="duration-200 text-zinc-300 hover:text-white"
+          >
+            <Plane size={20} color="#22d3ee" strokeWidth={1.75} />
           </Link>
         </div>
       </div>
