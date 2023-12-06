@@ -3,12 +3,12 @@ import Link from "next/link";
 const navigation = [
   { name: "Projects", href: "/projects" },
   { name: "Contact", href: "/contact" },
-  { name: "Resume", href: "https://kalim-cv.tiiny.site/" },
+  { name: "Resume", href: "/kalim-resume.pdf" },
 ];
 export default function Home() {
   return (
     <div className="flex flex-col items-center justify-center w-screen h-screen overflow-hidden">
-    {/* <div className="flex flex-col items-center justify-center w-screen h-screen overflow-hidden bg-gradient-to-tl from-black via-cyan-600/10 to-black"> */}
+      {/* <div className="flex flex-col items-center justify-center w-screen h-screen overflow-hidden bg-gradient-to-tl from-black via-cyan-600/10 to-black"> */}
       <nav className="my-16 animate-fade-in">
         <ul className="flex items-center justify-center gap-4">
           {navigation.map((item, index) => (
@@ -16,7 +16,8 @@ export default function Home() {
               key={item.href}
               href={item.href}
               className="text-md duration-200 text-zinc-400 hover:text-white"
-              target={index === 2 ? '_blank' : '_self'}
+              target={index === 2 ? "_blank" : "_self"}
+              rel={index === 2 ? "noopener noreferrer" : ""}
             >
               {item.name}
             </Link>
