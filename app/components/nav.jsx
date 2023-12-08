@@ -1,8 +1,15 @@
-import { Plane } from "lucide-react";
+import { Home } from "lucide-react";
 import Link from "next/link";
 import React, { useEffect, useRef, useState } from "react";
 
 export const Navigation = () => {
+  const navigation = [
+    { name: "Projects", href: "/projects" },
+    { name: "Contact", href: "/contact" },
+    // { name: "Skills", href: "/skills" },
+    { name: "Resume", href: "/kalim-resume.pdf" },
+  ];
+
   const ref = useRef(null);
   const [isIntersecting, setIntersecting] = useState(true);
 
@@ -27,25 +34,24 @@ export const Navigation = () => {
       >
         <div className="container flex flex-row-reverse items-center justify-between p-6 mx-auto">
           <div className="flex justify-between gap-8">
-            <Link
-              href="/projects"
-              className="duration-200 text-zinc-400 hover:text-white"
-            >
-              Projects
-            </Link>
-            <Link
-              href="/contact"
-              className="duration-200 text-zinc-400 hover:text-white"
-            >
-              Contact
-            </Link>
+            {navigation.map((navitem, index) => (
+              <Link
+                key={navitem.name}
+                href={navitem.href}
+                className={`"duration-200 text-zinc-400 hover:text-white"`}
+                target={index === 2 ? "_blank" : "_self"}
+                rel={index === 2 ? "noopener noreferrer" : ""}
+              >
+                {navitem.name}
+              </Link>
+            ))}
           </div>
 
           <Link
             href="/"
             className="duration-200 text-zinc-300 hover:text-white"
           >
-            <Plane size={20} color="#22d3ee" strokeWidth={1.75} />
+            <Home size={20} color="#22d3ee" strokeWidth={1.75} />
           </Link>
         </div>
       </div>
