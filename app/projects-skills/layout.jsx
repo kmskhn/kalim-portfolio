@@ -2,7 +2,7 @@ export default function ProjectsLayout({
 	children,
 }) {
 	return (
-		<div className="relative min-h-screen  ">
+		<div className="relative">
 			{children}
 		</div>
 	);

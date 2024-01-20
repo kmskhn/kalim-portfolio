@@ -21,9 +21,9 @@ const calSans = LocalFont({
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={[inter.variable, calSans.variable].join(" ")}>
-      <body>
+      <body className='relative'>
       <Particles
-        className="absolute inset-0 -z-10 animate-fade-in"
+        className="absolute inset-0 -z-10 animate-fade-in h-full"
         quantity={1000}
       />
         {children}

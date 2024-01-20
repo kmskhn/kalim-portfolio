@@ -4,10 +4,10 @@ import React, { useEffect, useRef, useState } from "react";
 
 export const Navigation = () => {
   const navigation = [
-    { name: "Projects", href: "/projects" },
+    { name: "Projects & Skills", href: "/projects-skills" },
     { name: "Contact", href: "/contact" },
     // { name: "Skills", href: "/skills" },
-    { name: "Resume", href: "/kalim-resume.pdf" },
+    { name: "Resume", href: "/Kalim-Khan-Resume.pdf" },
   ];
 
   const ref = useRef(null);

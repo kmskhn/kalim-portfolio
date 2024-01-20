@@ -1,14 +1,13 @@
 import Link from "next/link";
 
 const navigation = [
-  { name: "Projects", href: "/projects" },
+  { name: "Projects & Skills", href: "/projects-skills" },
   { name: "Contact", href: "/contact" },
-  { name: "Resume", href: "/kalim-resume.pdf" },
+  { name: "Resume", href: "/Kalim-Khan-Resume.pdf" },
 ];
 export default function Home() {
   return (
     <div className="flex flex-col items-center justify-center w-screen h-screen overflow-hidden">
-      {/* <div className="flex flex-col items-center justify-center w-screen h-screen overflow-hidden bg-gradient-to-tl from-black via-cyan-600/10 to-black"> */}
       <nav className="my-16 animate-fade-in">
         <ul className="flex items-center justify-center gap-4">
           {navigation.map((item, index) => (
@@ -32,7 +31,7 @@ export default function Home() {
       <div className="hidden w-screen h-px animate-glow md:block animate-fade-right bg-gradient-to-r from-zinc-300/0 via-zinc-300/50 to-zinc-300/0" />
       <div className="my-16 text-center animate-fade-in">
         <h2 className="text-sm text-white ">
-        Software Engineer Level 2 at Priceline.com
+        Software Engineer Level 2 at Priceline.com (Booking Holdings)
         </h2>
       </div>
     </div>

@@ -202,16 +202,6 @@ export default function Particles({
 				drawCircle(
 					{
 						...circle,
-						// x,
-						// y,
-						// translateX,
-						// translateY,
-						// alpha,
-						// x.x,
-						// y.y,
-						// translateX.translateX,
-						// translateY.translateY,
-						// alpha.alpha,
 					},
 					true,
 				);

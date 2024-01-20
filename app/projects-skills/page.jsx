@@ -6,6 +6,7 @@ import { Article } from "./article";
 import { ExternalLink, Eye } from "lucide-react";
 import Link from "next/link";
 import React, { useEffect, useRef, useState } from "react";
+import Skills from "../components/skills";
 
 export default function ProjectsPage() {
   const ref = useRef(null);
@@ -56,7 +57,8 @@ export default function ProjectsPage() {
       title: "Pella Re-Design (3 websites)",
       techStack:
         "React, Javascript, Gatsby, Accessibility, ADA compliance, CSS, Contentstack Headless CMS.",
-      description: "Webistes and CMS management for Pella.com and Pella at Lowes",
+      description:
+        "Webistes and CMS management for Pella.com and Pella at Lowes",
     },
     // Add more projects following the same structure
   ];
@@ -64,6 +66,23 @@ export default function ProjectsPage() {
   return (
     <div className="relative pb-16">
       <Navigation />
+      <div className="px-6 pt-20 mx-auto space-y-8 max-w-7xl lg:px-8 md:space-y-16 md:pt-24 lg:pt-32">
+        <div className="max-w-2xl mx-auto lg:mx-0">
+          <h2 className="text-3xl font-bold tracking-tight text-zinc-100 sm:text-4xl">
+            Skills
+          </h2>
+          <p className="mt-4 text-zinc-400">
+            Why do software engineers prefer dark mode? Because light attracts
+            bugs. 😉
+          </p>
+        </div>
+        <div className="w-full h-px bg-zinc-800" />
+
+        <div className="grid grid-cols-5 gap-x-8 gap-y-10 justify-center">
+          <Skills />
+        </div>
+        <div className="hidden w-full h-px md:block bg-zinc-800" />
+      </div>
       <div className="px-6 pt-20 mx-auto space-y-8 max-w-7xl lg:px-8 md:space-y-16 md:pt-24 lg:pt-32">
         <div className="max-w-2xl mx-auto lg:mx-0">
           <h2 className="text-3xl font-bold tracking-tight text-zinc-100 sm:text-4xl">
