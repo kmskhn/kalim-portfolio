@@ -34,13 +34,13 @@ const Skills = () => {
 
   return technologies.map((skill, index) => (
     <div key={index} className="text-center ">
-      <div className="skill-item w-[100px] h-[100px] mx-auto">
+      <div className="skill-item h-[50px] w-[50px] lg:h-[100px] lg:w-[100px] mx-auto">
         <Image
           src={skill.logo}
           alt={`${skill.name} logo`}
           width={100}
           height={100}
-          className={`h-[100px] ${skill.name === "Next.Js" && 'bg-slate-50 rounded-full'}`}
+          className={`h-[50px] w-[50px] ${skill.name === "Next.Js" && 'bg-slate-50 rounded-full'} lg:h-[100px] lg:w-[100px]`}
         />
       </div>
       <p className="mt-3">{skill.name}</p>

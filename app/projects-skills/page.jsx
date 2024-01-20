@@ -78,7 +78,7 @@ export default function ProjectsPage() {
         </div>
         <div className="w-full h-px bg-zinc-800" />
 
-        <div className="grid grid-cols-5 gap-x-8 gap-y-10 justify-center">
+        <div className="grid grid-cols-3 lg:grid-cols-5 gap-5 lg:gap-x-8 lg:gap-y-10 justify-center">
           <Skills />
         </div>
         <div className="hidden w-full h-px md:block bg-zinc-800" />
