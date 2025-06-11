@@ -3,7 +3,7 @@ import Link from "next/link";
 const navigation = [
   { name: "Projects & Skills", href: "/projects-skills" },
   { name: "Contact", href: "/contact" },
-  { name: "Resume", href: "/Kalimullah-Khan-CV.pdf" },
+  { name: "Resume", href: "/Kalimullah-Khan-Resume.pdf" },
 ];
 export default function Home() {
   return (
