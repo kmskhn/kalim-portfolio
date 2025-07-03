@@ -25,21 +25,37 @@ export default function ProjectsPage() {
 
   const projects = [
     {
+      slug: "priceline-penny",
+      date: "July 2022 - Present",
+      company: "Priceline.com | Software Engineer - Level 2",
+      title: "Penny.",
+      techStack: "React.js, Next.js, Vercel AI SDK, ChatGPT-4, LaunchDarkly, Splunk, Microsoft Rush Monorepo.",
+      description: "AI-powered Chat Travel Assistant for Priceline.com",
+    },
+    {
+      slug: "priceline-ivr",
+      date: "July 2022 - Present",
+      company: "Priceline.com | Software Engineer - Level 2",
+      title: "AI-Powered IVR System.",
+      techStack: "Node.js, TypeScript, Fastify, Amazon Connect, Twilio WebSockets, ChatGPT-4, LaunchDarkly.",
+      description: "ChatGPT Realtime API based IVR for Priceline.com",
+    },
+    {
       slug: "priceline-c3",
       date: "July 2022 - Present",
       company: "Priceline.com | Software Engineer - Level 2",
       title: "C3Assist - Micro Frontend App.",
-      techStack: "Remix, Graph QL, CSS-in-JS Styled Components.",
+      techStack: "Remix.js, GraphQL, CSS-in-JS Styled Components.",
       description: "A customer service application for Priceline.com",
     },
     {
       slug: "axiomio-it-services",
       date: "July 2021 - July 2022",
       company: "AxiomIO IT Services Pvt Ltd | Software Engineer",
-      title: "MIBL-POSP Website and Admin Portal - SPA",
+      title: "Mahindra Insurance Brokers Limited - Salesperson Portal.",
       techStack: "React, Redux, Redux-Thunk, Sass, Bootstrap 4.",
       description:
-        "Webiste and Admin portal for onborading and management of the pool of salespersons.",
+        "Web App and Admin portal for onborading, KYC and management of the pool of salespersons.",
     },
     {
       slug: "raw-engineering-inc-inseego",
