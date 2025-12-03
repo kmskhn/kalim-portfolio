@@ -26,7 +26,7 @@ const companiesList = [
     designation: "Senior Software Engineer",
   },
   {
-    company: "Priceline.com (Booking Holdings • Fortune 500)",
+    company: "Priceline.com ( Booking Holdings • Fortune 500 )",
     url: "https://www.linkedin.com/company/priceline-com/",
     content: [
       "Built Penny, an AI chat travel assistant for bookings, refunds, and itinerary changes.",
@@ -81,7 +81,7 @@ const AccordionItem = ({ company, url, designation,  year, content, isOpen, onCl
       aria-expanded={isOpen}
     >
 
-      <p className="text-lg font-semibold text-[#22d3ee]">{company}</p>
+      <p className="text-lg text-white">{company}</p>
 
       {/* <Link href={url} target="_blank">{comapny}</Link> */}
       <div className="flex items-center gap-2">
@@ -103,7 +103,7 @@ const AccordionItem = ({ company, url, designation,  year, content, isOpen, onCl
   }`}
 >
   <div className="p-4">
-    <ul className="list-disc pl-5 space-y-1 text-sm text-[#22d3ee]/70">
+    <ul className="list-disc pl-5 space-y-1 text-sm text-[#22d3ee]/70 text-left">
       {content.map((point, idx) => (
         <li key={idx}>{point}</li>
       ))}
