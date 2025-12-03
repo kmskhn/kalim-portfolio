@@ -36,7 +36,7 @@ function SkillsCanvas() {
 
     // init balls
     const rect = canvas.getBoundingClientRect();
-    const balls: Ball[] = SKILLS.map((label, i) => {
+    const balls = SKILLS.map((label, i) => {
       const r = 32; // circle radius
       return {
         x: Math.random() * (rect.width - 2 * r) + r,
@@ -48,7 +48,7 @@ function SkillsCanvas() {
       };
     });
 
-    let animationFrameId: number;
+    let animationFrameId;
 
     const animate = () => {
       const { width, height } = canvas.getBoundingClientRect();
