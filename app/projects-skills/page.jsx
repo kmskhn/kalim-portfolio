@@ -25,6 +25,25 @@ export default function ProjectsPage() {
 
   const projects = [
     {
+      slug: "pango-education-student-companion",
+      date: "Sept 2025 – Present",
+      company: "Imagine Learning (LearningMate Payroll) | Senior Software Engineer",
+      title: "Pango Education – AI-Powered Student Companion Widget",
+      techStack: "React.js, Vite, TypeScript, Vitest, Python FastAPI, ChatGPT-5",
+      description:
+        "Embeddable AI-powered student companion widget with Shadow DOM isolation, performance optimizations, code-splitting, and custom Vite+React architecture setup.",
+    },
+    {
+      slug: "board-observer-meetings-app",
+      date: "April 2025 – Sept 2025",
+      company: "Inception AI (G42), UAE | Senior Software Engineer",
+      title: "Board Observer – AI-Powered Meetings Platform",
+      techStack:
+        "Next.js, Vercel AI SDK, Python FastAPI, ChatGPT-4, React Window",
+      description:
+        "AI-driven meetings app with real-time audio/video, automated AI summaries, live document sharing, RAG chat assistant, and virtualized high-performance chat UI.",
+    },
+    {
       slug: "priceline-penny",
       date: "July 2022 - Present",
       company: "Priceline.com | Software Engineer - Level 2",
