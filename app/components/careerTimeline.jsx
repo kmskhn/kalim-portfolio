@@ -3,12 +3,22 @@ import React from "react";
 import Link from "next/link";
 
 const comapniesList = [
-  // {
-  //   comapny: "Inception AI G42",
-  //   content: "Tailwind is a utility-first CSS framework.",
-  //   year: "April '25  –  present",
-  //   designation: "Senior Frontend Engineer",
-  // },
+  {
+  company: "Imagine Learning (LearningMate Payroll)",
+  url:"https://www.linkedin.com/company/imagine-learning/about/",
+  content:
+    "Led frontend development for Pango Education’s AI-powered student companion widget. Set up the Vite + React + TypeScript stack, defined frontend standards, designed Shadow-DOM based embeddable architecture, and implemented performance optimizations including code-splitting and bundle size reductions.",
+  year: "Sept '25 – present",
+  designation: "Senior Software Engineer",
+},
+{
+  company: "Inception AI (G42), UAE",
+  url:"https://www.linkedin.com/company/inception-g42-company/about/",
+  content:
+    "Built an AI-powered meetings platform with real-time audio/video, automated AI meeting summaries, live document sharing with per-page insights, and a RAG chat assistant. Optimized chat performance using virtualization and collaborated on FastAPI + GPT-4 integrations.",
+  year: "Apr '25 – Sept '25",
+  designation: "Senior Software Engineer",
+},
   {
     comapny: "Priceline.com (Booking Holdings  • Fortune 500)",
     url:'https://www.linkedin.com/company/priceline-com/',
@@ -18,8 +28,7 @@ const comapniesList = [
   },
   {
     comapny: "AxiomIO",
-        url:'https://www.linkedin.com/company/axiomio/',
-
+    url:'https://www.linkedin.com/company/axiomio/',
     content: "Led front-end development of a fintech onboarding portal, integrating Stripe for payments and optimizing KYC and payout workflows",
     year: "Jul '21  –  Jul '22",
     designation: "Software Engineer",
