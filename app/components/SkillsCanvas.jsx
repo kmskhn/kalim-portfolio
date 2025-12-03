@@ -12,17 +12,9 @@ const SKILLS = [
   "Accessibility", "Performance", "Git", "CI/CD"
 ];
 
-type Ball = {
-  x: number;
-  y: number;
-  vx: number;
-  vy: number;
-  r: number;
-  label: string;
-};
 
 function SkillsCanvas() {
-  const canvasRef = useRef<HTMLCanvasElement | null>(null);
+  const canvasRef = useRef(null);
 
   useEffect(() => {
     const canvas = canvasRef.current;
