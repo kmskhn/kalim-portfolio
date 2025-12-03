@@ -7,6 +7,7 @@ import { ExternalLink, Eye } from "lucide-react";
 import Link from "next/link";
 import React, { useEffect, useRef, useState } from "react";
 import Skills from "../components/skills";
+import SkillsCanvas from "../components/SkillsCanvas";
 
 export default function ProjectsPage() {
   const ref = useRef(null);
@@ -113,9 +114,14 @@ export default function ProjectsPage() {
         </div>
         <div className="w-full h-px bg-zinc-800" />
 
+        <div className="mt-10">
+          <SkillsCanvas />
+        </div>
+
         <div className="grid grid-cols-3 lg:grid-cols-5 gap-5 lg:gap-x-8 lg:gap-y-10 justify-center">
           <Skills />
         </div>
+        
         <div className="hidden w-full h-px md:block bg-zinc-800" />
       </div>
       <div className="px-6 pt-20 mx-auto space-y-8 max-w-7xl lg:px-8 md:space-y-16 md:pt-24 lg:pt-32">
