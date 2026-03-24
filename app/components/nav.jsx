@@ -7,7 +7,7 @@ export const Navigation = () => {
     { name: "Projects & Skills", href: "/projects-skills" },
     { name: "Contact", href: "/contact" },
     // { name: "Skills", href: "/skills" },
-    { name: "Resume", href: "/Kalimullah-Khan-Resume.pdf" },
+    { name: "Resume", href: "KALIM-KHAN-RESUME.pdf" },
   ];
 
   const ref = useRef(null);

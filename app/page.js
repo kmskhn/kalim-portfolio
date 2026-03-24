@@ -4,7 +4,7 @@ import CareerTimeline from "./components/careerTimeline";
 const navigation = [
   { name: "Projects & Skills", href: "/projects-skills" },
   { name: "Contact", href: "/contact" },
-  { name: "Resume", href: "/Kalimullah-Khan-Resume.pdf" },
+  { name: "Resume", href: "/KALIM-KHAN-RESUME.pdf" },
 ];
 export default function Home() {
   return (
